@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 
 // dependencies
 const express = require('express');
@@ -17,20 +17,15 @@ app.use(methodOverride('_method'));
 const mongoURI = process.env.MONGO_URI;
 
 // mongoose connection
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connection.once('open', () => {
-    console.log("connected to mongo");
+mongoose.connect(mongoURI, { userNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connection.once("open", ()=>{
+    console.log("connected and feelin gooooood");
 })
 
 // Controller
 
-// const logsController = require('./controllers/logs.js');
-// app.use('/logs', logsController);
-
-
-// const crewController = require('./controllers/dacrew.js');
-// app.use('/crew', crewController);
-
+const workoutsController = require('./controllers/workouts.js');
+app.use('/workouts', workoutsController);
 
 
 // Homepage
@@ -41,6 +36,6 @@ app.get('/', (req, res)=> {
 
 // listen
 app.listen(PORT, () => {
-    console.log('listening on: ' + PORT);
+    console.log('workin workin on port: ' + PORT);
 });
 
