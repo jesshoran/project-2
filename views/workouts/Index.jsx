@@ -14,7 +14,7 @@ class Index extends React.Component {
                             <img className="card-img-top" style={{height:'200px'}} src={workout.image}/><br/>
                             <div className="card-body d-flex flex-column">
                             <p className="card-title p-2">{workout.type}</p><br/>
-                            <a className="p-2 align-items-end btn btn-secondary btn-sm" href={`/workout/${workout._id}`}>Learn more</a>
+                            <a className="p-2 align-items-end btn btn-secondary btn-sm" href={`/workouts/${workout._id}`}>Learn more</a>
                             {/* <form className="btn" action={`/workouts/${workout._id}?_method=DELETE`} method="POST">
                                 <input type="submit" value={`DELETE`}/>
                             </form> */}
