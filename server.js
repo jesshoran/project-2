@@ -17,10 +17,13 @@ app.use(methodOverride('_method'));
 const mongoURI = process.env.MONGO_URI;
 
 // mongoose connection
-mongoose.connect(mongoURI, { userNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true})
 mongoose.connection.once("open", ()=>{
     console.log("connected and feelin gooooood");
 })
+
+//Database
+const Workout = require("./models/workouts.js")
 
 // Controller
 

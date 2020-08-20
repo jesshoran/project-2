@@ -8,15 +8,20 @@ class New extends React.Component {
             <div>
                 <h1>New Workout Page</h1>
                 <form action="/workouts" method="POST">
-                    Title: <input type="text" name="title"/><br/>
-                    Entry: <input type="text" name="entry"/><br/>
-                    Is Ship Broken: <input type="checkbox" name="shipIsBroken"/><br/>
+                    Name: <input type="text" name="name"/><br/>
+                    Type: <input type="text" name="type"/><br/>
+                    Music: <input type="text" name="music"/><br/>
+                    Image: <input type="text" name="image"/><br/>
+                    When: <input type="text" name="when"/><br/>
+                    Description: <input type="text" name="description"/><br/>
+                    
                     <input type="submit" name="" value="Create New Log"/><br/>
                 </form>
             </div>
-           
-        }
+      );       
     }
+    
+}
 
   
   module.exports = New;

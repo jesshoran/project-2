@@ -1,10 +1,10 @@
 const React = require('react');
-const Default = require('../components/Default.jsx');
+// const Default = require('../components/Default.jsx');
 
 class Index extends React.Component {
   render() {
     return (
-        <Default>
+        <div>
             <h1>Workouts</h1>
             <div className="container d-flex p-2 flex-wrap justify-content-around">
                 {this.props.workouts.map((workout, id) => {
@@ -22,9 +22,10 @@ class Index extends React.Component {
                             </div>
                         </div>
                     )
-                })}
+                        })}
             </div>
-        </Default> );
+        </div> 
+    )   
   }
 }
 
