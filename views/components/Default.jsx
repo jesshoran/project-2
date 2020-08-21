@@ -17,9 +17,9 @@ class Default extends React.Component {
                     <h1 className="text-center" ></h1>
                     <ul className="nav justify-content-center">
                         <li className="nav-item"></li>
-                            <a className="nav-link" href="/workouts">Home</a>
+                            <a className="nav-link" href="/">Home</a>
                         <li className="nav-item"></li>
-                            <a className="nav-link" href="/workouts/new">Create</a>
+                            <a className="nav-link" href="/workouts">Workouts</a>
                     </ul>
                     {this.props.children}
                     <footer>
