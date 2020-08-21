@@ -12,6 +12,19 @@ router.get('/', (req, res) => {
 
 });
 
+router.get('/hiit', (req, res)=>{
+    Workout.find({type: "HIIT"}, (error, hiit)=>{
+        if(error){
+            res.status(500).send({
+              error: error.message
+            })
+          } else {
+            console.log(hiit)
+            res.send("here's where the hiit training ones will go")
+          }
+        })
+      })
+
 //New
 
 router.get('/new', (req, res)=>{
@@ -22,7 +35,7 @@ router.get('/new', (req, res)=>{
 
 router.delete('/:id', (req, res)=>{
     Workout.findByIdAndDelete(req.params.id, (error, deletedWorkout)=> {
-        if(error)
+        if(error) 
             res.status(500).send({
                 error: error.message
             })
