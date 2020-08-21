@@ -1,6 +1,6 @@
 const React = require("react");
 
-class Default extends React.Component {
+class Hp extends React.Component {
   render() {
     return (
       <html>
@@ -37,7 +37,8 @@ class Default extends React.Component {
         </head>
         <body
           style={{
-            textAlign: "center",
+            fontFamily: "'Montserrat', sans-serif",
+            textAlign: "center"
           }}
         >
           <ul className="nav nav-tabs">
@@ -86,4 +87,4 @@ class Default extends React.Component {
     );
   }
 }
-module.exports = Default;
+module.exports = Hp;

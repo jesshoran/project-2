@@ -7,6 +7,7 @@ class Show extends React.Component {
         return (
             <Default>
             <div>
+
                 <h1>Learn More about {name}</h1>
                 <p>Type: {type} </p>
                 <p>Music: {music}</p>
@@ -15,7 +16,8 @@ class Show extends React.Component {
                 <p>Description: {description}</p> 
                 <a className="btn btn-info" href={`/workouts/${_id}/edit`}>Edit This Workout</a>
                 <form className="btn" action={`/workouts/${_id}?_method=DELETE`} method="POST">
-                <input type="submit" value={`DELETE`}/></form>        
+                <input type="submit" value={`DELETE`}/></form> 
+   
             </div>
             </Default>
         )
