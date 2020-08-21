@@ -14,13 +14,36 @@ class Default extends React.Component {
                 <body style= {{
                     textAlign: 'center',
                     }}>
+                        <ul className="nav nav-tabs">
+                            <li className="nav-item">
+                                <a className="nav-link active" href="/">Beats Body Home</a>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="/workouts" role="button" aria-haspopup="true" aria-expanded="false">Workouts</a>
+                                <div className="dropdown-menu">
+                                <a className="dropdown-item" href="#">All Workouts</a>
+                                <a className="dropdown-item" href="#">Add a New workout</a>
+                                {/* <a className="dropdown-item" href="#">Something else here</a> */}
+                                {/* <div className="dropdown-divider"></div>
+                                <a className="dropdown-item" href="#">Separated link</a> */}
+                                </div>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Music (for example)</a>
+                            </li>
+                            {/* <li className="nav-item">
+                                <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li> */}
+                            </ul>
+
+                        {/* //backup nav 
                     <h1 className="text-center" ></h1>
                     <ul className="nav justify-content-center">
                         <li className="nav-item"></li>
                             <a className="nav-link" href="/">Home</a>
                         <li className="nav-item"></li>
                             <a className="nav-link" href="/workouts">Workouts</a>
-                    </ul>
+                    </ul> */}
                     {this.props.children}
                     <footer>
 

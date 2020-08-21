@@ -6,7 +6,8 @@ class Homepage extends React.Component {
       return (
         <Default>
           <div>
-              <h1>Welcome to the homepage!</h1>
+              <h1>Welcome to Beats Body!</h1>
+              <h3>Bond with other music lovers and get fit doing it!</h3>
             <a href="/workouts">Check out all the Workouts!</a><br/>
           </div>
           </Default>)
