@@ -34,7 +34,7 @@ app.use('/workouts', workoutsController);
 // Homepage
 
 app.get('/', (req, res)=> {
-    res.send("Welcome to the Homepage")    
+    res.render("Homepage")    
 }) 
 
 // listen
