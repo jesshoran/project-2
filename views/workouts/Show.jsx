@@ -1,11 +1,11 @@
 const React = require('react');
-// const Default = require('../components/Default.jsx');
+const Default = require('../components/Default.jsx');
 
 class Show extends React.Component {
     render() {
         const {_id, name, type, music, image, when, description} = this.props.workout;
         return (
-      
+            <Default>
             <div>
                 <h1>Learn More about {name}</h1>
                 <p>Type: {type} </p>
@@ -17,7 +17,7 @@ class Show extends React.Component {
                 <form className="btn" action={`/workouts/${_id}?_method=DELETE`} method="POST">
                 <input type="submit" value={`DELETE`}/></form>        
             </div>
-     
+            </Default>
         )
     }
 }

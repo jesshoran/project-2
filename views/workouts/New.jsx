@@ -1,10 +1,10 @@
 const React = require('react');
-// const Default = require('../components/Default.jsx');
+const Default = require('../components/Default.jsx');
 
 class New extends React.Component {
     render() {
       return (
-        
+        <Default>
             <div>
                 <h1>New Workout Page</h1>
                 <form action="/workouts" method="POST">
@@ -18,6 +18,7 @@ class New extends React.Component {
                     <input type="submit" name="" value="Create New Log"/><br/>
                 </form>
             </div>
+          </Default>
       );       
     }
     

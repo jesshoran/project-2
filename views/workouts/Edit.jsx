@@ -1,11 +1,12 @@
 const React = require('react');
-// const Default = require('../components/Default.jsx');
+const Default = require('../components/Default.jsx');
 
 class Edit extends React.Component {
  render(){
     const {_id, name, type, music, image, when, description} = this.props.workout;
     const id = _id;
    return (
+     <Default>
      <div>
          <form action={`/workouts/${id}/?_method=PUT`} method="POST">
          <label htmlFor="name">Name:</label><input type="text" name="name" id="name" defaultValue={name}/><br/>
@@ -14,9 +15,10 @@ class Edit extends React.Component {
          <label htmlFor="image">Image:</label><input type="image" name="image" id="image" defaultValue={image}/><br/>
          <label htmlFor="when">When:</label><input type="when" name="when" id="when" defaultValue={when}/><br/>
          <label htmlFor="description">Description:</label><input type="description" name="description" id="description" defaultValue={description}/><br/>
-         <input type="submit" value="Edit Workout"/>
+         <input type="submit" value="Save Workout"/>
          </form>
      </div>
+     </Default>
    )
  }
 }

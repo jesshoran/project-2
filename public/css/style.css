@@ -1,0 +1,15 @@
+body {
+    background-image: url("https://www.edwinvelezsuccess.com/wp-content/uploads/2014/08/mzl.iqklercm.png");
+    font-family: 'Montserrat', sans-serif;
+    height: 1000px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+img {
+    filter: opacity(10%);
+}
+
+
