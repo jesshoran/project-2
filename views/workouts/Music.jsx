@@ -1,30 +1,27 @@
 const React = require('react');
 const Default = require('../components/Default.jsx');
 
-class Index extends React.Component {
+class Music extends React.Component {
   render() {
+    const {_id, name, type, music, image, when, description} = this.props.workout;
     return (
         <Default>
         <div>
-            <h1>Workouts</h1>
+            <h1>EDM workouts</h1>
             <div className="container d-flex p-2 flex-wrap justify-content-around">
-                {this.props.workouts.map((workout, id) => {
                         return (
                             <div className="card text-center" style={{
-                                width: 300}} key={workout._id}>
+                                width: 300}}>
                             <img className="card-img-top" style={{height:'200px'}} src={workout.image}/><br/>
                             <div className="card-body d-flex flex-column">
                             <p className="card-title p-2">{workout.name}</p><br/>
                             <p className="card-title p-2">{workout.type}</p><br/>
                             <a className="p-2 align-items-end btn btn-secondary btn-sm" href={`/workouts/${workout._id}`}>Check it out</a>
-                            {/* <form className="btn" action={`/workouts/${workout._id}?_method=DELETE`} method="POST">
-                                <input type="submit" value={`DELETE`}/>
-                            </form> */}
-                            {/* <a href={`/workouts/${workout._id}/edit`}>Edit</a> */}
+
                             </div>
                         </div>
                     )
-                        })}
+                })}
             </div>
         </div> 
     </Default>
@@ -32,4 +29,4 @@ class Index extends React.Component {
   }
 }
 
-module.exports = Index;
+module.exports = Music;

@@ -40,44 +40,39 @@ class Default extends React.Component {
             textAlign: "center",
           }}
         >
-          <ul className="nav nav-tabs">
-            <li className="nav-item">
-              <a className="nav-link active" href="/">
-                Beats Body Home
-              </a>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="/workouts"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Workouts
-              </a>
-              <div className="dropdown-menu">
-                <a className="dropdown-item" href="/workouts">
-                  All Workouts
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="/">Beats Body</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/workouts" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Workouts
                 </a>
-                <a className="dropdown-item" href="/workouts/new">
-                  Add a New workout
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/workouts/new">Add a workout</a>
+                  <a class="dropdown-item" href="/workouts/hiit">Hiit Workouts</a>
+                  {/* <a class="dropdown-item" href="#">Something else here</a> */}
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Music
                 </a>
-                {/* <a className="dropdown-item" href="#">Something else here</a> */}
-                {/* <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">Separated link</a> */}
-              </div>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/members">
-                Members
-              </a>
-            </li>
-            {/* <li className="nav-item">
-                                <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li> */}
-          </ul>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/workouts/edm">Electronic</a>
+                  <a class="dropdown-item" href="/workouts/top-40">Top 40</a>
+                  {/* <a class="dropdown-item" href="#">Something else here</a> */}
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
         
           {this.props.children}
           <footer></footer>

@@ -11,8 +11,18 @@ class New extends React.Component {
                 <legend className="legend2">Add a new one here!</legend>
                 <form action="/workouts" method="POST">
                 <label for="name">Name: </label><input type="text"  name="name"/><br/>
-                <label for="type">Type:</label><input type="text" name="type"/><br/>
-                <label for="music">Music: </label><input type="text" name="music"/><br/>
+                <label for="type" className="select-label" >Type:</label><select name="type" id="type" form="type" className="select-box" style={{width: '300px'}}>
+                  <option>HIIT</option>
+                  <option>Strength</option>
+                  <option>Body Sculpt</option>
+                </select>
+                <label for="music" className="select-label" id="music-word"
+                >Music: </label><select name="music" className="select-box"  id="music-box" form="music" style={{width: '300px'}}>
+                  <option>EDM</option>
+                  <option>Hip Hop</option>
+                  <option>Metal</option>
+                  <option>Top 40</option>
+                </select><br/>
                 <label for="image">Image:</label><input type="text" name="image"/><br/>
                 <label for="description">Description:</label><input type="text" name="description"/><br/>
                 <label for="when">When:</label><input type="text" name="when"/><br/>

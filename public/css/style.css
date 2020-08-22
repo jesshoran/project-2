@@ -1,7 +1,7 @@
 body {
-    background-image: 
+    /* background-image: 
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
-    url("https://www.edwinvelezsuccess.com/wp-content/uploads/2014/08/mzl.iqklercm.png");
+    url("https://www.edwinvelezsuccess.com/wp-content/uploads/2014/08/mzl.iqklercm.png"); */
     /* background-color: black; */
     /* color: white; */
     font-family: 'Montserrat', sans-serif;
@@ -13,11 +13,15 @@ body {
 }
 
 .jumbotron {
-    background-image: gray;
-    width: 80%;
+    background-color: lightgoldenrodyellow;
+    /* background-image: 
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+    url("https://www.edwinvelezsuccess.com/wp-content/uploads/2014/08/mzl.iqklercm.png"); */
+    /* width: 80%; */
     position: relative;
-    left: 10%;
-    right: 10%;
+    /* left: 10%;
+    right: 10%; */
+    height: 400px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,14 +72,18 @@ legend {
 
   input {
       border: 1px solid black;
+
   }
 
   input, textarea {
-    width: 100%;
-    margin: 10px 0;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 5px;
+    position: relative;
+    left: 10%;
   }
 
   textarea {
@@ -84,5 +92,22 @@ legend {
   }
 
   label {
+    text-align: center;
     display: block;
   }
+
+.select-box {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    left: 32%;
+    text-align-last:center;
+}
+
+option {
+    text-align: center;
+}

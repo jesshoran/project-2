@@ -12,6 +12,8 @@ router.get('/', (req, res) => {
 
 });
 
+//WORKOUT PATHS
+//HIIT
 router.get('/hiit', (req, res)=>{
     Workout.find({type: "HIIT"}, (error, hiit)=>{
         if(error){
@@ -24,6 +26,61 @@ router.get('/hiit', (req, res)=>{
           }
         })
       })
+
+//MUSIC PATHS
+//EDM
+router.get('/edm', (req, res)=>{
+        Workout.find({music: "EDM"}, (error, edm)=>{
+            if(error){
+                res.status(500).send({
+                  error: error.message
+                })
+              } else {
+                console.log(edm)
+                res.render("workouts/Music")
+              }
+            })
+          })
+
+router.get('/hiphop', (req, res)=>{
+    Workout.find({music: "Hip-Hop"}, (error, hip)=>{
+    if(error){
+        res.status(500).send({
+            error: error.message
+        })
+        } else {
+        console.log(hip)
+        res.send("here's where the hip hop ones will go")
+        }
+    })
+    })
+
+router.get('/metal', (req, res)=>{
+    Workout.find({music: "Metal"}, (error, metal)=>{
+        if(error){
+            res.status(500).send({
+                error: error.message
+            })
+            } else {
+            console.log(metal)
+            res.send("here's where the Metal ones will go")
+            }
+        })
+        })
+
+router.get('/top40', (req, res)=>{
+    Workout.find({music: "Electronic"}, (error, t40)=>{
+        if(error){
+            res.status(500).send({
+                error: error.message
+            })
+            } else {
+            console.log(t40)
+            res.send("here's where the Top 40 ones will go")
+            }
+        })
+        })
+
 
 //New
 

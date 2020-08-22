@@ -13,8 +13,8 @@ class Edit extends React.Component {
               <fieldset class="fieldset">
                 <legend className="legend">Edit</legend>
                 <label htmlFor="name">Name:</label><input type="text" name="name" id="name" defaultValue={name} /><br />
-                <label htmlFor="type">Type:</label><input type="text" name="type" id="type" defaultValue={type} /><br />
-                <label htmlFor="music">Music:</label><input type="text" name="music" id="music" defaultValue={music} /><br />
+                <label htmlFor="type">Type:</label><input type="select" name="type" id="type" defaultValue={type} /><br />
+                <label htmlFor="music">Music:</label><input type="select" name="music" id="music" defaultValue={music} /><br />
                 <label htmlFor="image">Image:</label><input type="text" name="image" id="image" defaultValue={image} /><br />
                 <label htmlFor="when">When:</label><input type="text" name="when" id="when" defaultValue={when} /><br />
                 <label htmlFor="description">Description:</label><input type="text" name="description" id="description" defaultValue={description} /><br />
