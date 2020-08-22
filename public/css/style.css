@@ -1,6 +1,6 @@
 body {
-    /* background-image: 
-    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+    /* background-image:  */
+    /* linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
     url("https://www.edwinvelezsuccess.com/wp-content/uploads/2014/08/mzl.iqklercm.png"); */
     /* background-color: black; */
     /* color: white; */
@@ -13,7 +13,7 @@ body {
 }
 
 .jumbotron {
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
     /* background-image: 
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
     url("https://www.edwinvelezsuccess.com/wp-content/uploads/2014/08/mzl.iqklercm.png"); */
@@ -21,7 +21,7 @@ body {
     position: relative;
     /* left: 10%;
     right: 10%; */
-    height: 400px;
+    /* height: 400px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

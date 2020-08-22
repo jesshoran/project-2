@@ -9,51 +9,39 @@ router.get('/', (req, res) => {
             workouts: allWorkouts
         })
     });
-
 });
-
-//WORKOUT PATHS
-//HIIT
-router.get('/hiit', (req, res)=>{
-    Workout.find({type: "HIIT"}, (error, hiit)=>{
-        if(error){
-            res.status(500).send({
-              error: error.message
-            })
-          } else {
-            console.log(hiit)
-            res.send("here's where the hiit training ones will go")
-          }
-        })
-      })
 
 //MUSIC PATHS
 //EDM
 router.get('/edm', (req, res)=>{
-        Workout.find({music: "EDM"}, (error, edm)=>{
-            if(error){
-                res.status(500).send({
-                  error: error.message
-                })
-              } else {
-                console.log(edm)
-                res.render("workouts/Music")
-              }
+    Workout.find({music: "EDM"}, (error, edm)=>{
+        if(error){
+            res.status(500).send({
+                error: error.message
             })
-          })
+            } else {
+            console.log(edm)
+            res.render('workouts/Music', {
+                workout: edm
+            });
+        }
+    })
+})
 
 router.get('/hiphop', (req, res)=>{
     Workout.find({music: "Hip-Hop"}, (error, hip)=>{
-    if(error){
-        res.status(500).send({
-            error: error.message
-        })
-        } else {
-        console.log(hip)
-        res.send("here's where the hip hop ones will go")
+        if(error){
+            res.status(500).send({
+                error: error.message
+            })
+            } else {
+            console.log(hip)
+            res.render('workouts/Music', {
+                workout: hip
+            });
         }
     })
-    })
+})
 
 router.get('/metal', (req, res)=>{
     Workout.find({music: "Metal"}, (error, metal)=>{
@@ -63,25 +51,29 @@ router.get('/metal', (req, res)=>{
             })
             } else {
             console.log(metal)
-            res.send("here's where the Metal ones will go")
-            }
-        })
-        })
+            res.render('workouts/Music', {
+                workout: metal
+            });
+        }
+    })
+})
 
 router.get('/top40', (req, res)=>{
-    Workout.find({music: "Electronic"}, (error, t40)=>{
+    Workout.find({music: "Top-40"}, (error, top40)=>{
         if(error){
             res.status(500).send({
                 error: error.message
             })
             } else {
-            console.log(t40)
-            res.send("here's where the Top 40 ones will go")
-            }
-        })
-        })
+            console.log(top40)
+            res.render('workouts/Music', {
+                workout: top40
+            });
+        }
+    })
+})
 
-
+        
 //New
 
 router.get('/new', (req, res)=>{

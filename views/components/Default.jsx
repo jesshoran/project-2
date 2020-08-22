@@ -55,9 +55,9 @@ class Default extends React.Component {
                   Workouts
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/workouts/new">Add a workout</a>
-                  <a class="dropdown-item" href="/workouts/hiit">Hiit Workouts</a>
-                  {/* <a class="dropdown-item" href="#">Something else here</a> */}
+                  <a class="dropdown-item" href="/workouts">All workouts</a>
+                  <a class="dropdown-item" href="/workouts/hiit">Add a workout</a>
+                  <a class="dropdown-item" href="/workouts/hiit">HIIT Workours</a>
                 </div>
               </li>
               <li class="nav-item dropdown">

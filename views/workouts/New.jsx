@@ -14,14 +14,14 @@ class New extends React.Component {
                 <label for="type" className="select-label" >Type:</label><select name="type" id="type" form="type" className="select-box" style={{width: '300px'}}>
                   <option>HIIT</option>
                   <option>Strength</option>
-                  <option>Body Sculpt</option>
+                  <option>Body-Sculpt</option>
                 </select>
                 <label for="music" className="select-label" id="music-word"
                 >Music: </label><select name="music" className="select-box"  id="music-box" form="music" style={{width: '300px'}}>
                   <option>EDM</option>
-                  <option>Hip Hop</option>
+                  <option>Hip-Hop</option>
                   <option>Metal</option>
-                  <option>Top 40</option>
+                  <option>Top-40</option>
                 </select><br/>
                 <label for="image">Image:</label><input type="text" name="image"/><br/>
                 <label for="description">Description:</label><input type="text" name="description"/><br/>
