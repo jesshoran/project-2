@@ -111,3 +111,14 @@ legend {
 option {
     text-align: center;
 }
+
+.show-page {
+  position: relative
+}
+
+.delete-button {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+
+}

@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Workout = require('../models/workouts.js');// export router
+const Comment = require('../models/comments.js');// export router
 
 // Index
 router.get('/', (req, res) => {
@@ -118,6 +119,32 @@ router.post('/', (req, res)=>{
     })
   })
 
+router.post('/workouts/:id', (req, res)=>{
+    Comment.create(req.body, (error, createdComment)=>{
+      if(error){
+        res.status(500).send({
+          error: error.message
+        })
+      } else {
+        console.log(createdComment)
+        res.redirect('/workouts/:id')
+      }
+    })
+  })
+
+  router.post('/', (req, res)=>{
+    Workout.create(req.body, (error, createdWorkout)=>{
+      if(error){
+        res.status(500).send({
+          error: error.message
+        })
+      } else {
+        console.log(createdWorkout)
+        res.redirect('/workouts')
+      }
+    })
+  })
+
 //Edit
 router.get('/:id/edit', (req, res)=> {
     Workout.findById(req.params.id, (error, editWorkout)=>{
@@ -143,6 +170,7 @@ router.get('/:id', (req, res) => {
         });
     });
 });
+
 
 
 
