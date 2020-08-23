@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Workout = require('../models/workouts.js');// export router
-const Comment = require('../models/comments.js');// export router
+
 
 // Index
 router.get('/', (req, res) => {
@@ -81,6 +81,7 @@ router.get('/new', (req, res)=>{
     res.render('workouts/New')
 })
 
+
 //Destroy
 
 router.delete('/:id', (req, res)=>{
@@ -104,6 +105,22 @@ router.put('/:id', (req, res) => {
     });
 });
 
+
+
+router.put('/:id/comment', (req, res) => {
+    const comment = {username: req.body.username, comment: req.body.comment}
+    console.log(comment)
+    Workout.findById(req.params.id, (error, foundWorkout)=>{
+        console.log(foundWorkout)
+        foundWorkout.comments.push(comment)
+        console.log(foundWorkout)
+        Workout.findByIdAndUpdate(foundWorkout, {comments: foundWorkout.comments})
+        res.redirect(`/workouts/${req.params.id}`)
+        
+   
+    });
+});
+
 //Create
 
 router.post('/', (req, res)=>{
@@ -115,19 +132,6 @@ router.post('/', (req, res)=>{
       } else {
         console.log(createdWorkout)
         res.redirect('/workouts')
-      }
-    })
-  })
-
-router.post('/workouts/:id', (req, res)=>{
-    Comment.create(req.body, (error, createdComment)=>{
-      if(error){
-        res.status(500).send({
-          error: error.message
-        })
-      } else {
-        console.log(createdComment)
-        res.redirect('/workouts/:id')
       }
     })
   })
@@ -160,18 +164,30 @@ router.get('/:id/edit', (req, res)=> {
     })
 })
 
+router.get('/:id/comment', (req, res)=> {
+    Workout.findById(req.params.id, (error, editComments)=>{
+        if(error){
+            res.status(500).send({
+                error: error.message
+            })
+        }else {
+            res.render('workouts/Comments', {
+                workout: editComments
+            })
+        }
+    })
+})
+
 
 //Show
 
 router.get('/:id', (req, res) => {
-    Workout.findById(req.params.id, (error, foundWorkout) => {
+    Workout.findById(req.params.id, (error, foundWorkout, allComments) => {
         res.render('workouts/Show', {
-            workout: foundWorkout
+            workout: foundWorkout,
         });
     });
 });
-
-
 
 
 

@@ -3,7 +3,8 @@ const Default = require('../components/Default.jsx');
 
 class Show extends React.Component {
     render() {
-        const {_id, name, type, music, image, when, description} = this.props.workout;
+        const {_id, name, type, music, image, when, description, comments} = this.props.workout;
+        // const {username, comment} = this.props.comment
         return (
             <Default>
             <div className = "show-page">
@@ -21,13 +22,22 @@ class Show extends React.Component {
                 <br/>
                 <a className="btn btn-secondary" href="/workouts">Back to All Workouts</a>
                 <h4>Comments</h4>
-                <p>Add a comment</p>
+                <a className="btn btn-info" href={`/workouts/${_id}/comment`}>Add a comment</a>
                 
-                <form id="commentForm" action="/action_page.php">
-                    Username: <input type="text" name="uname"></input><br/>
-                    Comment: <input type="text" name="comment"></input><br/>
-                    <input type="button" onclick="addComment()" value="Submit form"></input>
-                </form>
+                <div className="comment-section">
+                     {this.props.workout.comments.map((comment) => {
+                         return (
+                             <div className="comments-section">
+                                 Username: {comment.username}
+                                 Comment: {comment.comment}
+                             </div>
+                         )
+                     })}
+                
+
+
+                </div>
+                
    
             </div>
             </Default>

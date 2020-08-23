@@ -7,6 +7,7 @@ const workoutSchema = new mongoose.Schema({
     image: { type: String, required: false },
     when: { type: String, required: true },
     description: { type: String, required: true },
+    comments: { type: Array, required: false}
     
     },
     // {timestamps: true}
