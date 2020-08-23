@@ -11,18 +11,14 @@ class Index extends React.Component {
                 {this.props.workouts.map((workout, id) => {
                         return (
                             <div className="card text-center" style={{
-                                width: 300}} key={workout._id}>
-                            <img className="card-img-top" style={{height:'200px'}} src={workout.image}/><br/>
-                            <div className="card-body d-flex flex-column">
-                            <p className="card-title p-2">{workout.name}</p><br/>
-                            <p className="card-title p-2">{workout.type}</p><br/>
-                            <a className="p-2 align-items-end btn btn-secondary btn-sm" href={`/workouts/${workout._id}`}>Learn More &rArr;</a>
-                            {/* <form className="btn" action={`/workouts/${workout._id}?_method=DELETE`} method="POST">
-                                <input type="submit" value={`DELETE`}/>
-                            </form> */}
-                            {/* <a href={`/workouts/${workout._id}/edit`}>Edit</a> */}
+                                width: 250}} key={workout._id}>
+                                <img className="card-img-top" style={{height:'200px'}} src={workout.image}/>
+                                <div className="card-body d-flex flex-column">
+                                    <h5 className="card-title">{workout.name}</h5>
+                                    <p className="card-title">{workout.type}/{workout.music}</p>
+                                    <a className="align-items-end btn btn-secondary btn-sm" href={`/workouts/${workout._id}`}>Learn More &rArr;</a>
+                                </div>
                             </div>
-                        </div>
                     )
                         })}
             </div>

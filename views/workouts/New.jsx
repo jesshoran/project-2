@@ -1,23 +1,25 @@
 const React = require('react');
-const Default = require('../components/Default.jsx');
+const Image = require('../components/Image.jsx');
 
 class New extends React.Component {
     render() {
       return (
-        <Default>
+        <Image>
             <div className="container-changes">
                 <h1>We are always adding new workouts!!</h1>
                 <fieldset>
                 <legend className="legend2">Add a new one here!</legend>
                 <form action="/workouts" method="POST">
                 <label for="name">Name: </label><input type="text"  name="name"/><br/>
-                <label for="type" className="select-label" >Type:</label><select name="type" id="type" form="type" className="select-box" style={{width: '300px'}}>
+                <label for="type" className="select-label" >Type:</label><select name="type" id="type" form="type" className="select-box">
+                  <option>Select Type</option>
                   <option>HIIT</option>
                   <option>Strength</option>
                   <option>Body-Sculpt</option>
                 </select>
                 <label for="music" className="select-label" id="music-word"
-                >Music: </label><select name="music" className="select-box"  id="music-box" form="music" style={{width: '300px'}}>
+                >Music: </label><select name="music" className="select-box"  id="music-box" form="music">
+                  <option>Select Music</option>
                   <option>EDM</option>
                   <option>Hip-Hop</option>
                   <option>Metal</option>
@@ -31,7 +33,7 @@ class New extends React.Component {
                 </form>
                 </fieldset>
             </div>
-          </Default>
+          </Image>
       );       
     }
     

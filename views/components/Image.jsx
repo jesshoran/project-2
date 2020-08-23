@@ -1,6 +1,6 @@
 const React = require("react");
 
-class Default extends React.Component {
+class Image extends React.Component {
   render() {
     return (
       <html>
@@ -35,11 +35,7 @@ class Default extends React.Component {
           ></script>
           <title></title>
         </head>
-        <body
-          style={{
-            textAlign: "center",
-          }}
-        >
+        <body className="body-image">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="/">Beats Body</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,4 +77,4 @@ class Default extends React.Component {
     );
   }
 }
-module.exports = Default;
+module.exports = Image;

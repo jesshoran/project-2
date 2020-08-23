@@ -13,7 +13,7 @@ class Homepage extends React.Component {
                 <a className="btn btn-primary" href="/workouts" role="button">Join our Community</a>
               </div>
 
-              <div className="row">
+              <div className="row" style={{backgroundColor: 'white'}}>
                 <div className="col-lg-3 col-md-6">
                   <img src="https://image.shutterstock.com/image-vector/music-notes-background-colorful-gclef-260nw-626501552.jpg" alt="" width="100" height="100"/>
                   <h2>Electronic</h2>
@@ -42,6 +42,10 @@ class Homepage extends React.Component {
                   <p><a class="btn btn-secondary" href="/workouts/top40" role="button">Top 40 Workouts &rArr;</a></p>
                 </div>
            </div>
+
+           <hr class="featurette-divider"></hr>
+
+
         </div>
       </Default>
       );

@@ -11,12 +11,12 @@ class Show extends React.Component {
                 <h1>{name}</h1>
                 <p>Type: {type} </p>
                 <p>Music: {music}</p>
-                <img src={image} alt=""/>
+                <img style={{width: 300}} src={image} alt=""/>
                 <p>When: {when}</p>
                 <p>Description: {description}</p> 
                 <a className="btn btn-info" href={`/workouts/${_id}/edit`}>Edit This Workout</a>
                 <br/>
-                <form className="btn-warning" style={{width: 250}} action={`/workouts/${_id}?_method=DELETE`} method="POST">
+                <form className="btn" style={{width: 250}} action={`/workouts/${_id}?_method=DELETE`} method="POST">
                 <input type="submit" value={`DELETE`}/></form> 
                 <br/>
                 <a className="btn btn-secondary" href="/workouts">Back to All Workouts</a>

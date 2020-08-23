@@ -3,14 +3,12 @@ const Default = require('../components/Default.jsx');
 
 class Music extends React.Component {
   render() {
-    // const {_id, name, type, image} = this.props.workout
-    console.log(this.props.workout)
     return (
         <Default>
         <div>
-            <h1>EDM workouts</h1>
             {this.props.workout.map((musicWorkout) => {
                 return(
+            // <h1>{musicWorkout.music} Workouts</h1>
             <div className="container d-flex p-2 flex-wrap justify-content-around">
                 <div className="card text-center" style={{
                         width: 300}}>
