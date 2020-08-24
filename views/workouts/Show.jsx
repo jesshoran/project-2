@@ -1,5 +1,6 @@
 const React = require('react');
 const Image = require('../components/Image.jsx');
+const { disconnect } = require('mongoose');
 
 class Show extends React.Component {
     render() {
@@ -32,10 +33,19 @@ class Show extends React.Component {
                 <div className="comment-section">
                      {this.props.workout.comments.map((comment) => {
                          return (
-                             <div className="comments-section">
-                                 Username: {comment.username}<br/>
-                                 Comment: {comment.comment}
-                             </div>
+                                <div className="comments-section">
+                                    <div className="row">
+                                        <div class="col-sm">
+                                        {comment.this.props.member.pic}
+                                        </div>
+                                        <div class="col-sm">
+                                        {comment.username}
+                                        </div>
+                                        <div class="col-sm">
+                                        {comment.comment}
+                                        </div>
+                                    </div>
+                                </div>
                          )
                      })}
                 </div>
