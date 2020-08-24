@@ -1,0 +1,171 @@
+/* * {
+  border: 1px solid gold;
+} */
+
+body {  
+    background-color: white;
+    /* color: white; */
+    font-family: 'Montserrat', sans-serif;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin: auto;
+}
+
+.body-image {
+  background-image:  
+  linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+  url("https://www.edwinvelezsuccess.com/wp-content/uploads/2014/08/mzl.iqklercm.png");
+}
+
+.jumbotron {
+    background-color: #d3d3d3;
+    /* width: 80%; */
+    position: relative;
+    /* left: 10%;
+    right: 10%; */
+    /* height: 400px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+  }
+
+.container {
+  max-width: 2000px;
+}
+.container-changes {
+    position: relative;
+    top: 5%;
+    margin: auto;
+    width: 50%;
+    background: #f9f9f9;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: left;
+    box-shadow: 1px 1px 10px #ddd,
+              -1px -1px 10px #ddd,
+              1px -1px 10px #ddd,
+              -1px 1px 10px #ddd;
+
+}
+.container-changes-show {
+      position: relative;
+      top: 5%;
+      margin: 40px auto auto auto;
+      width: 50%;
+      background: #f9f9f9;
+      border-radius: 10px 10px 10px 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: auto;
+      text-align: left;
+      box-shadow: 1px 1px 10px #ddd,
+                -1px -1px 10px #ddd,
+                1px -1px 10px #ddd,
+                -1px 1px 10px #ddd;
+      position: relative;
+      text-align: center;
+
+}
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: black;
+}
+
+.fieldset {
+    /* border: 1px solid blue; */
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+legend {
+    text-align: center;
+    font-weight: 500;
+    color: purple;
+  }
+
+  input {
+      border: 1px solid black;
+
+  }
+
+  input, textarea {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    left: 10%;
+  }
+
+  textarea {
+    resize: none;
+    height: 75px;
+  }
+
+  label {
+    text-align: center;
+    display: block;
+  }
+
+.select-box {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    left: 10%;
+    text-align-last: center;
+}
+
+option {
+    text-align: center;
+}
+
+.show-page {
+  position: relative
+}
+
+.delete-button {
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+
+}
+
+.show-edit {
+  position: absolute;
+  bottom: 0px;
+  left: auto;
+  right: auto
+}
+
+.back {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.back {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+}
+
+.workcard {
+  border: 1px solid black
+}
