@@ -56,7 +56,7 @@ body {
 .container-changes-show {
       position: relative;
       top: 5%;
-      margin: auto;
+      margin: 40px auto auto auto;
       width: 50%;
       background: #f9f9f9;
       border-radius: 10px 10px 10px 10px;
@@ -150,12 +150,19 @@ option {
 .show-edit {
   position: absolute;
   bottom: 0px;
-  left: 5px;
+  left: auto;
+  right: auto
 }
 
 .back {
   position: absolute;
   top: 5px;
+  left: 5px;
+}
+
+.back {
+  position: absolute;
+  top: 60px;
   left: 5px;
 }
 

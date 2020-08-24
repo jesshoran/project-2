@@ -7,26 +7,28 @@ class Show extends React.Component {
         // const {username, comment} = this.props.comment
         return (
             <Image>
-              
-            <div className = "container-changes-show">
+            <div className="show=page-div"> 
+              <form className="btn" style={{width: 100}} className="delete-button" action={`/workouts/${_id}?_method=DELETE`} method="POST">
+                    <input type="submit" value={`DELETE`}/></form> 
 
-                <h1>{name}</h1>
-                <p>Type: {type} </p>
-                <p>Music: {music}</p>
-                <img style={{width: 300}} src={image} alt={image}/>
-                <p>When: {when}</p>
-                <p>Description: {description}</p> 
-                <a className="show-edit" href={`/workouts/${_id}/edit`}>Edit This Workout</a>
+                <a className="show-edit" href={`/workouts/${_id}/edit`}>Edit Workout</a>
+                <a className="btn btn-small back" href="/workouts">&#8647; Back to All Workouts</a>
+               
+                <div className = "container-changes-show">
 
+                    <h1>{name}</h1>
+                    <p>Type: {type} </p>
+                    <p>Music: {music}</p>
+                    <img style={{width: 300}} src={image} alt={image}/>
+                    <p>When: {when}</p>
+                    <p>Description: {description}</p> 
+                        <br/>
 
                     <br/>
-                <form className="btn" style={{width: 100}} className="delete-button" action={`/workouts/${_id}?_method=DELETE`} method="POST">
-                <input type="submit" value={`DELETE`}/></form> 
-                <br/>
-                {/* <a className="btn btn-small back" href="/workouts">Back to All Workouts</a> */}
-                <h4>Comments</h4>
-                <a className="btn btn-info" href={`/workouts/${_id}/comment`}>Add a comment</a>
-                
+                    
+                    <h4>Comments</h4>
+                    <a className="btn btn-info" href={`/workouts/${_id}/comment`}>Add a comment</a>
+                    
                 <div className="comment-section">
                      {this.props.workout.comments.map((comment) => {
                          return (
@@ -40,8 +42,8 @@ class Show extends React.Component {
                 
    
             </div>
-            
-            </Image>
+        </div>    
+        </Image>
         )
     }
 }

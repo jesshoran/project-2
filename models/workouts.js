@@ -10,7 +10,7 @@ const workoutSchema = new mongoose.Schema({
     comments: { type: Array, required: false}
     
     },
-    // {timestamps: true}
+    {timestamps: true}
 );
 
 const Workout = mongoose.model("Workout", workoutSchema);
