@@ -71,6 +71,17 @@ class Default extends React.Component {
                   <a class="dropdown-item" href="/workouts/top40">Top 40</a>
                 </div>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Members
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/members/new">Become a member</a>
+                  <a class="dropdown-item" href="/members">See all our members</a>
+                  {/* <a class="dropdown-item" href="/workouts/metal">Metal</a>
+                  <a class="dropdown-item" href="/workouts/top40">Top 40</a> */}
+                </div>
+              </li>
             </ul>
           </div>
         </nav>

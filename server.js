@@ -30,6 +30,8 @@ const Workout = require("./models/workouts.js")
 const workoutsController = require('./controllers/workouts.js');
 app.use('/workouts', workoutsController);
 
+const membersController = require('./controllers/members.js');
+app.use('/members', membersController);
 
 // Homepage
 

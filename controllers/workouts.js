@@ -115,6 +115,7 @@ router.put('/:id/comment', (req, res) => {
         foundWorkout.comments.push(comment)
         console.log(foundWorkout)
         Workout.findByIdAndUpdate(foundWorkout, {comments: foundWorkout.comments})
+        console.log(foundWorkout)
         res.redirect(`/workouts/${req.params.id}`)
         
    
@@ -136,18 +137,18 @@ router.post('/', (req, res)=>{
     })
   })
 
-  router.post('/', (req, res)=>{
-    Workout.create(req.body, (error, createdWorkout)=>{
-      if(error){
-        res.status(500).send({
-          error: error.message
-        })
-      } else {
-        console.log(createdWorkout)
-        res.redirect('/workouts')
-      }
-    })
-  })
+//   router.post('/', (req, res)=>{
+//     Workout.create(req.body, (error, createdWorkout)=>{
+//       if(error){
+//         res.status(500).send({
+//           error: error.message
+//         })
+//       } else {
+//         console.log(createdWorkout)
+//         res.redirect('/workouts')
+//       }
+//     })
+//   })
 
 //Edit
 router.get('/:id/edit', (req, res)=> {

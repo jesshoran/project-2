@@ -62,8 +62,20 @@ class Image extends React.Component {
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="/workouts/edm">Electronic</a>
-                  <a class="dropdown-item" href="/workouts/top-40">Top 40</a>
-                  {/* <a class="dropdown-item" href="#">Something else here</a> */}
+                  <a class="dropdown-item" href="/workouts/hiphop">Hip Hop</a>
+                  <a class="dropdown-item" href="/workouts/metal">Metal</a>
+                  <a class="dropdown-item" href="/workouts/top40">Top 40</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Members
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/members/new">Become a member</a>
+                  <a class="dropdown-item" href="/members">See all our members</a>
+                  {/* <a class="dropdown-item" href="/workouts/metal">Metal</a>
+                  <a class="dropdown-item" href="/workouts/top40">Top 40</a> */}
                 </div>
               </li>
             </ul>

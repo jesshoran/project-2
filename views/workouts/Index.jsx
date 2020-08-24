@@ -7,11 +7,11 @@ class Index extends React.Component {
         <Default>
         <div>
             <h1>Workouts</h1>
-            <div className="container d-flex p-2 flex-wrap justify-content-around">
+            <div className="container d-flex m-3 flex-wrap justify-content-around">
                 {this.props.workouts.map((workout, id) => {
                         return (
-                            <div className="card text-center" style={{
-                                width: 250}} key={workout._id}>
+                            <div className="card text-center m-2 workcard" style={{
+                                width: 300}} key={workout._id}>
                                 <img className="card-img-top" style={{height:'200px'}} src={workout.image}/>
                                 <a className="align-items-end btn btn-secondary btn-sm" href={`/workouts/${workout._id}`}>Learn More &rArr;</a>
                                 <div className="card-body d-flex flex-column">
