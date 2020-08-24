@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Workout = require("../models/workouts.js"); // export router
+const Member = require("../models/members.js");
 
 // Index
 router.get("/", (req, res) => {
@@ -171,8 +172,18 @@ router.get("/:id/comment", (req, res) => {
         error: error.message,
       });
     } else {
-      res.render("workouts/Comments", {
-        workout: editComments,
+      Member.find({}, (err, users) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("-----------------success--------------------");
+          console.log(users);
+        }
+
+        res.render("workouts/Comments", {
+          workout: editComments,
+          users: users,
+        });
       });
     }
   });
