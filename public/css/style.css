@@ -34,6 +34,16 @@ body {
     text-align: center;
   }
 
+.jumbotron > img {
+  opacity: 5%;
+  width: 5%
+}
+
+.logo {
+  width: 50px;
+  opacity: 50%;
+}
+
 .jumbo-blue {
   margin: auto auto 15px auto;
 }
@@ -199,3 +209,16 @@ option {
   font-size: 55px;
 }
 
+.about-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.workout-icon {
+  height: 125px;
+  width: 125px;
+}
+
+.about-divs {
+  /* margin: 5px; */
+}

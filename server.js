@@ -39,6 +39,9 @@ app.get('/', (req, res)=> {
     res.render("Homepage")    
 }) 
 
+app.get('/about', (req, res)=> {
+    res.render("About")    
+})
 
 
 

@@ -6,19 +6,20 @@ class Music extends React.Component {
     return (
         <Default>
         <div>
-            <h1>All the best {this.props.workout.type} Workouts!</h1>
+            <h1 className="index-h1">{this.props.workout.music} Workouts!</h1>
             <div className="container d-flex m-3 flex-wrap justify-content-around">
             {this.props.workout.map((musicWorkout) => {
                 return(
-            // <h1>{musicWorkout.music} Workouts</h1>
             
-                <div className="card text-center" style={{
-                        width: 250}}>
-                    <img className="card-img-top" style={{height:'200px'}} src={musicWorkout.image}/><br/>
+                    
+                <div className="card text-center m-2 workcard" style={{
+                        width: 300}}>
+                    <img className="card-img-top" style={{height:'200px'}} src={musicWorkout.image}/>
+                    <a className="btn btn-secondary btn-sm" href={`/workouts/${musicWorkout._id}`}>Learn More &rArr;</a>
                     <div className="card-body d-flex flex-column">
-                        <h5 className="card-title p-2">{musicWorkout.name}</h5>
-                        <p className="card-title p-2">{musicWorkout.type}</p>
-                        <a className="p-2 align-items-end btn btn-secondary btn-sm" href={`/workouts/${musicWorkout._id}`}>Check it out</a>
+                        <h5 className="card-title">{musicWorkout.name}</h5>
+                        <p className="card-title">{musicWorkout.type}</p>
+                        
                     </div>
                 </div>
             

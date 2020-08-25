@@ -36,44 +36,49 @@ class Image extends React.Component {
           <title></title>
         </head>
         <body className="body-image" >
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="/">Beats Body</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a className="navbar-brand" href="/">Beats Body <img className="logo" src="/images/run-music.png" alt=""/></a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item active">
+                <a className="nav-link" href="/">Home </a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/workouts" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li claclassNamess="nav-item">
+                <a className="nav-link" href="/about">About</a>
+              </li>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="/workouts" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Workouts
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/workouts">All workouts</a>
-                  <a class="dropdown-item" href="/workouts/new">Add a workout</a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a className="dropdown-item" href="/workouts">All workouts</a>
+                  <a className="dropdown-item" href="/workouts/new">Add a workout</a>
+
                 </div>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Music
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/workouts/edm">Electronic</a>
-                  <a class="dropdown-item" href="/workouts/hiphop">Hip Hop</a>
-                  <a class="dropdown-item" href="/workouts/metal">Metal</a>
-                  <a class="dropdown-item" href="/workouts/top40">Top 40</a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a className="dropdown-item" href="/workouts/edm">Electronic</a>
+                  <a className="dropdown-item" href="/workouts/hiphop">Hip Hop</a>
+                  <a className="dropdown-item" href="/workouts/metal">Metal</a>
+                  <a className="dropdown-item" href="/workouts/top40">Top 40</a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Members
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/members/new">Become a member</a>
-                  <a class="dropdown-item" href="/members">See all our members</a>
-
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a className="dropdown-item" href="/members/new">Become a member</a>
+                  <a className="dropdown-item" href="/members">See all our members</a>
+                  {/* <a class="dropdown-item" href="/workouts/metal">Metal</a>
+                  <a class="dropdown-item" href="/workouts/top40">Top 40</a> */}
                 </div>
               </li>
             </ul>
