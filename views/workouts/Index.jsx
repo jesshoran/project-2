@@ -6,7 +6,7 @@ class Index extends React.Component {
     return (
         <Default>
         <div>
-            <h1 className="index-h1">Workouts</h1>
+            <h1 className="index-h1">All Workouts</h1>
 {/* 
             Mini-Nav */}
         
