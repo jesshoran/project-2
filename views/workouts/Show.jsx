@@ -27,32 +27,41 @@ class Show extends React.Component {
 
                     <br/>
                     
-                    <h4>Comments</h4>
+                    {/* <h4>Comments</h4> */}
                     <a className="btn btn-info" href={`/workouts/${_id}/comment`}>Add a comment</a>
                     
-                <div className="comment-section">
+                <   div className="comment-section container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                            Username
+                            </div>
+                            <div class="col-sm-6">
+                            Comment
+                            </div>
+                        </div>
+                    </div>
+
+
+
                      {this.props.workout.comments.map((comment) => {
                          return (
-                                <div className="comments-section">
-                                    <div className="row">
-                                        <div class="col-sm">
-                                        {comment.this.props.member.pic}
-                                        </div>
-                                        <div class="col-sm">
-                                        {comment.username}
-                                        </div>
-                                        <div class="col-sm">
-                                        {comment.comment}
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className="container-fluid comments-body">    
+                            <div class="row">
+                            <div class="col-sm-6">
+                            {comment.username}
+                            </div>
+                            <div class="col-sm-6">
+                            {comment.comment}
+                            </div>
+                        </div>
+                    </div>
                          )
                      })}
                 </div>
                 
    
             </div>
-        </div>    
+            
         </Image>
         )
     }

@@ -6,7 +6,8 @@ class Index extends React.Component {
     return (
         <Default>
         <div>
-            <h1>Workouts</h1>
+            <h1 className="index-h1">Workouts</h1>
+            <a className="btn btn-info" href={`/workouts/new`}>Add a New Workout!</a>
             <div className="container d-flex m-3 flex-wrap justify-content-around">
                 {this.props.workouts.map((workout, id) => {
                         return (

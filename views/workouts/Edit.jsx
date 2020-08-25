@@ -14,13 +14,13 @@ class Edit extends React.Component {
               <fieldset className="fieldset">
                 <legend className="legend2">Make any changes here</legend>
                 <label htmlFor="name">Name:</label><input type="text" name="name" id="name" defaultValue={name} /><br />
-                <label htmlFor="type">Type:</label><select name="type" id="type" className="select-box">
+                <label htmlFor="type">Type:</label><select name="type" id="type" defaultValue={type} className="select-box">
                     <option>Select Type</option>
                     <option>HIIT</option>
                     <option>Strength</option>
                     <option>Body-Sculpt</option>
                   </select><br />
-                <label htmlFor="music">Music:</label><select name="music" className="select-box"  id="music-box" >
+                <label htmlFor="music">Music:</label><select name="music" defaultValue={music} className="select-box"  id="music-box" >
                     <option>Select Music</option>
                     <option>EDM</option>
                     <option>Hip-Hop</option>

@@ -15,7 +15,7 @@ class New extends React.Component {
             >
               <label for="username">Username: </label>
               {/* <input type="text" name="username"/><br/> */}
-              <select name="username" id="username">
+              <select className ="select-box" name="username" id="username">
                 {this.props.users.map((user) => {
                   return <option value={user.username}>{user.username}</option>;
                 })}

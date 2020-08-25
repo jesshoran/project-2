@@ -35,7 +35,7 @@ class Image extends React.Component {
           ></script>
           <title></title>
         </head>
-        <body className="body-image">
+        <body className="body-image" >
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="/">Beats Body</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,6 @@ class Image extends React.Component {
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="/workouts">All workouts</a>
                   <a class="dropdown-item" href="/workouts/new">Add a workout</a>
-                  <a class="dropdown-item" href="/workouts/hiit">HIIT Workours</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -74,8 +73,7 @@ class Image extends React.Component {
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="/members/new">Become a member</a>
                   <a class="dropdown-item" href="/members">See all our members</a>
-                  {/* <a class="dropdown-item" href="/workouts/metal">Metal</a>
-                  <a class="dropdown-item" href="/workouts/top40">Top 40</a> */}
+
                 </div>
               </li>
             </ul>

@@ -20,12 +20,13 @@ body {
 }
 
 .jumbotron {
+  /* background-image:  
+  linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+  url(/images/music-back.png); */
+
     background-color: #d3d3d3;
     /* width: 80%; */
     position: relative;
-    /* left: 10%;
-    right: 10%; */
-    /* height: 400px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -169,3 +170,28 @@ option {
 .workcard {
   border: 1px solid black
 }
+
+.table {
+  margin: 10px auto auto auto;
+  border: 1px solid gray;
+}
+
+.comments-body {
+  border: .1px solid gray;
+  border-radius: 5px;
+}
+
+.comment-section {
+  margin: 15px auto auto auto;
+  /* border: 2px solid gray; */
+  border-radius: 5px;
+  font-size: 22px;
+  color: teal;
+
+}
+
+.index-h1 {
+  margin: 10px auto 10px auto;
+  font-size: 55px;
+}
+
