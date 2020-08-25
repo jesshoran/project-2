@@ -11,7 +11,10 @@ class Homepage extends React.Component {
                 <h1 className="display-4">Welcome to Beats Body!</h1>
                 <p className="lead">Bond with other music lovers and get fit doing it!</p>
                 <p>Start working out with other music lovers today!</p>
-                <a className="btn btn-primary" href="/members/new" role="button">Join our Community</a>
+                <a className="btn btn-primary jumbo-blue" href="/members/new" role="button">Join our Community</a>
+                <br></br>
+                <p>Or, check out all of our amazing workouts!</p>
+                <a className="btn btn-dark" href="/workouts" role="button">View All Workouts</a>
               </div> 
 
 
@@ -74,7 +77,7 @@ class Homepage extends React.Component {
 
            <hr class="featurette-divider"></hr>
 
-           <p>All workout info goes here, maybe a how it works</p>
+           {/* <p>All workout info goes here, maybe a how it works</p> */}
 
 
         </div>
