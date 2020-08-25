@@ -13,7 +13,7 @@ class Show extends React.Component {
                     <input type="submit" value={`DELETE`}/></form> 
 
                 <a className="show-edit" href={`/workouts/${_id}/edit`}>Edit Workout</a>
-                <a className="btn btn-small back" href="/workouts">&#8647; Back to All Workouts</a>
+                <a className="btn btn-small back-wo" href="/workouts">&#8647; Back to All Workouts</a>
                
                 <div className = "container-changes-show">
 

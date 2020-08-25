@@ -169,15 +169,11 @@ option {
   right: auto
 }
 
-.back {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-}
 
-.back {
-  position: absolute;
-  top: 60px;
+
+.back-wo {
+  position: fixed;
+  top: 80px;
   left: 5px;
 }
 

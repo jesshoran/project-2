@@ -3,10 +3,12 @@ const Default = require('../components/Default.jsx');
 
 class Music extends React.Component {
   render() {
+      const workout = this.props.workout
     return (
         <Default>
         <div>
-            <h1 className="index-h1">{this.props.workout.music} Workouts!</h1>
+            
+            <h1 className="index-h1">{workout[0].music} Workouts!</h1>
             <div className="container d-flex m-3 flex-wrap justify-content-around">
             {this.props.workout.map((musicWorkout) => {
                 return(
